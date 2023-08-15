@@ -20,4 +20,9 @@ let query = $('#input').val()
 //place API URL in variable
 let apiURL = 
 
+method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
+		'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+	}
 }
