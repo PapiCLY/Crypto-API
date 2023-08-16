@@ -18,11 +18,22 @@ function returnUSD(){
 let query = $('#input').val()
 
 //place API URL in variable
-let apiURL = 
+let apiURL = `https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&search=${query}&orderDirection=desc&limit=50&offset=0`;
+fetch(apiURL, {method: 'GET',
+headers: {
+    'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
+    'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+} }).then(function(response){
+if(response.ok){
+response.json().then(function(data){
+let icon = data.data.coins[0].iconURL;
+let name = data.data.coins[0].name;
+let price = data.data.coins[0].price;
 
-method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
-		'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
-	}
+$('#icon').html(icon);
+
+})
+}
+})
+
 }
