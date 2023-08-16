@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/Assets/images/12812914_5072310.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:whitesmoke
+}
