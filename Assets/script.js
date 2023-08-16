@@ -33,10 +33,11 @@ response.json().then(function(data){
 icon = data.data.coins[0].iconURL;
 coinName = data.data.coins[0].name;
 price = data.data.coins[0].price;
+var newPrice='$' + Math.round(price*100)/100;
 
 $('#icon').attr('src', icon);
 $('#name').html(coinName);
-$('#price').html(price);
+$('#price').html(newPrice);
 
 })
 }
