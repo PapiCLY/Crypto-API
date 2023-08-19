@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+h1{
+    font-size: 50px;
+    color: gold;
+}
 body{
     margin: 0;
     padding: 0;
@@ -8,13 +12,68 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color:whitesmoke
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    height: 700px;
 }
 
+#userInput{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    margin: 20px; 
+    font-size: 30px;
+} button{
+    padding: 20px 30px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    background-color: gold;
+    border-radius: 10px;
+    background: linear-gradient(to right, gold, rgb(141, 123, 18));
+    border: none;
+    color: rgb(39, 37, 37);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+h3{
+    margin: 20px;
+    font-size: 30px;
+}
 
 p{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    color: black;
+    margin: 20px;
+    color: goldenrod;
+}
+@media (max-width:600px){
+    body{
+        background-image: url(/Assets/images/12812914_5072310.jpg);
+        height: 850px;
+        width: auto;
+    } #userInput{
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        margin-bottom: 20px; 
+        font-size: 30px;
+    } button{
+        padding: 10px;
+        font-size: 20px;
+        display: block;
+        margin: auto;
+        background-color: gold;
+        border-radius: 10px;
+        background: linear-gradient(to right, gold, rgb(141, 123, 18));
+        border: none;
+        color: rgb(39, 37, 37);
+        font-weight: bolder;
+    }
 }
