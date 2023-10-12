@@ -1,2 +1,2 @@
 # Crypto-API
-Choose two crypto currencies to display their current price
+Enter crypto name to display current price. using rapid API.
